@@ -7,7 +7,7 @@ description: >-
   services-conseils au service de la recherche et de l'enseignement.
 ---
 
-<img src="{{ '/assets/hugo-bernier.jpg' | relative_url }}" alt="Portrait de Hugo Bernier" class="portrait" width="150" height="150">
+<img src="{{ '/assets/hugo-bernier.jpg' | relative_url }}" alt="Portrait de Hugo Bernier" class="portrait" width="190" height="238">
 
 # Hugo Bernier
 
