@@ -1,0 +1,13 @@
+title: Hugo Bernier
+description: >-
+  Hugo Bernier, bibliothécaire à l'expérience numérique en recherche à
+  l'Université de Montréal. Créativité, développement de projets et
+  services-conseils au service de la recherche et de l'enseignement.
+lang: fr-CA
+url: https://hugobernier.info
+
+# Pas de thème : la mise en page est dans _layouts/default.html
+# et les styles dans assets/css/style.css.
+
+exclude:
+  - README.md

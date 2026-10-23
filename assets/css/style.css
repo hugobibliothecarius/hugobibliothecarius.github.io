@@ -1,0 +1,145 @@
+:root {
+  --fond: #ffffff;
+  --fond-doux: #f6f8fa;
+  --texte: #1f2328;
+  --texte-doux: #59636e;
+  --bordure: #d1d9e0;
+  --accent: #0969da;
+  --mesure: 42rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --fond: #0d1117;
+    --fond-doux: #151b23;
+    --texte: #f0f6fc;
+    --texte-doux: #9198a1;
+    --bordure: #3d444d;
+    --accent: #4493f8;
+  }
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--fond);
+  color: var(--texte);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans",
+               Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.page {
+  max-width: var(--mesure);
+  margin: 0 auto;
+  padding: 3.5rem 1.25rem 1rem;
+}
+
+/* --- Entête ------------------------------------------------------ */
+
+.portrait {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid var(--bordure);
+  display: block;
+  margin-bottom: 1.5rem;
+}
+
+h1 {
+  font-size: 1.75rem;
+  line-height: 1.25;
+  margin: 0 0 .25rem;
+  letter-spacing: -.01em;
+}
+
+.fonction {
+  color: var(--texte-doux);
+  margin: 0 0 1rem;
+}
+
+.contact {
+  margin: 0 0 2.5rem;
+  font-size: .95rem;
+}
+
+/* --- Sections ---------------------------------------------------- */
+
+h2 {
+  font-size: 1.1rem;
+  margin: 2.75rem 0 .85rem;
+  padding-bottom: .4rem;
+  border-bottom: 1px solid var(--bordure);
+  letter-spacing: -.005em;
+}
+
+p { margin: 0 0 1rem; }
+
+ul {
+  margin: 0 0 1rem;
+  padding-left: 1.25rem;
+}
+
+li { margin-bottom: .4rem; }
+
+strong { font-weight: 600; }
+
+em {
+  color: var(--texte-doux);
+  font-style: italic;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover,
+a:focus-visible { text-decoration: underline; }
+
+a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 3px;
+}
+
+/* --- Compétences ------------------------------------------------- */
+
+.competence {
+  background: var(--fond-doux);
+  border: 1px solid var(--bordure);
+  border-radius: 8px;
+  padding: 1rem 1.15rem;
+  margin-bottom: .85rem;
+}
+
+.competence p { margin: 0; }
+
+/* L'énoncé, puis le paragraphe : une respiration entre les deux. */
+.competence p + p { margin-top: .7rem; }
+
+/* --- Pied -------------------------------------------------------- */
+
+.pied {
+  max-width: var(--mesure);
+  margin: 3rem auto 0;
+  padding: 1.25rem;
+  border-top: 1px solid var(--bordure);
+  color: var(--texte-doux);
+  font-size: .85rem;
+}
+
+.pied p { margin: 0; }
+
+/* --- Petits écrans ----------------------------------------------- */
+
+@media (max-width: 34rem) {
+  .page { padding-top: 2.25rem; }
+  .portrait { width: 120px; height: 120px; }
+  h1 { font-size: 1.5rem; }
+}
